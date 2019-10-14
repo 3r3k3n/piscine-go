@@ -1,1 +1,2 @@
-ls -A -m -t -F | sed 's/ //g'
+#!/bin/bash
+echo "ls -A -m -t -F | sed 's/ //g'"
