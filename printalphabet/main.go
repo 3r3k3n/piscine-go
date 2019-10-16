@@ -1,9 +1,11 @@
 package main 
-import ("fmt")
+import (
+	    "fmt")
 
-func main(){
+func main() {
 	for i:=97; i<=122; i++{
 		fmt.Printf("%c",i)
 	}
 	fmt.Printf("\n")
+
 }
