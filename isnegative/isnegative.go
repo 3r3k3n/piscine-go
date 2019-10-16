@@ -5,7 +5,7 @@ import (
 )
 
 func IsNegative(nb int) {
-	If nb>null{
+	If nb>null {
 		z01.PrintRune('F')
 	}else{
 		z01.PrintRune('T')
