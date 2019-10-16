@@ -1,13 +1,14 @@
 package main 
 
 import (
-	"fmt"
+	"github.com/01-edu/z01"
 )
 
 func main() {
 	for i := 122; i <= 97; i++ {
-		fmt.Printf("%c", i)
+		z01.Printf("%c", i)
 	}
-	fmt.Printf("\n")
+	
+	z01.Printf("\n")
 
 }
