@@ -1,4 +1,8 @@
+<<<<<<< HEAD:printcomb.go
 package main
+=======
+package printcomb
+>>>>>>> f329ff2b6c93e8e5bfeddc71795e85d3af04e28c:printcomb/printcomb.go
 
 import (
 	"github.com/01-edu/z01"
@@ -15,7 +19,6 @@ func PrintComb() {
 					z01.PrintRune(',')
 					z01.PrintRune(' ')
 				}
-				}
 			}
 		}
 	}
@@ -23,5 +26,9 @@ func PrintComb() {
 }
 
 func main() {
+<<<<<<< HEAD:printcomb.go
 	PrintComb
+=======
+	PrintComb()
+>>>>>>> f329ff2b6c93e8e5bfeddc71795e85d3af04e28c:printcomb/printcomb.go
 }
