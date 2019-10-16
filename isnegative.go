@@ -1,6 +1,8 @@
-package pisice
+package isnegative
 
-import "github.com/01-edu/z01"
+import (
+	"github.com/01-edu/z01"
+)
 
 func IsNegative(nb int) {
 	if nb < 0 {
@@ -8,5 +10,10 @@ func IsNegative(nb int) {
 	} else {
 		z01.PrintRune('F')
 	}
-	z01.PrintRune('\n')
+	z01.PrintRune(10)
+}
+func main() {
+	IsNegative(1)
+	IsNegative(0)
+	IsNegative(-1)
 }
