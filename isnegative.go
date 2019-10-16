@@ -11,8 +11,7 @@ func IsNegative(nb int) {
 		z01.PrintRune('F')
 	}
 	z01.PrintRune('\n')
-}
-	
+}	
 func main() {
 	piscine.IsNegative(1)
 	piscine.IsNegative(0)
