@@ -8,5 +8,5 @@ func main() {
 	for i := 97; i <= 122; i++ {
 		z01.PrintRune("%c", i)
 	}
-	z01.PrintRune("\n")
+	z01.PrintRune('\n')
 }
