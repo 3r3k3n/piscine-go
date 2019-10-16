@@ -5,10 +5,10 @@ import (
 )
 
 func IsNegative(nb int) {
-	If nb>null{
+	If nb > 0 {
 		z01.PrintRune('F')
-	}else{
+	} else {
 		z01.PrintRune('T')
 	}
-	z01.PrintRune(rune(10))
+	z01.PrintRune('\n')
 }
