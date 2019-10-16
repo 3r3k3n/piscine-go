@@ -5,10 +5,10 @@ import (
 )
 
 func main() {
-	for i := 'z'; i <= 'a'; i-- {
+	for i := 'z'; i >= 'a'; i-- {
 		z01.PrintRune(i)
 		if i == 'a' {
-		        z01.PrintRune(rune(10))
+		        z01.PrintRune(10)
 		}
 	}
 }
