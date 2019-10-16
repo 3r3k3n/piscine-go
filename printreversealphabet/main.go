@@ -7,8 +7,8 @@ import (
 func main() {
 	for i := 'z'; i >= 'a'; i-- {
 		z01.PrintRune(i)
-		if i == 'a'{
-	        z01.PrintRune(10)
+		if i == 'a' {
+	                z01.PrintRune(10)
 		}
 	}
 }
