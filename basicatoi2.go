@@ -1,6 +1,6 @@
 package piscine
 
-func intfor(r rune) int {
+func intfor2(r rune) int {
 	temp2 := -1
 	for temp := '0'; temp <= r; temp++ {
 		temp2++
@@ -20,7 +20,7 @@ func BasicAtoi(s string) int {
 			return 0
 		} else {
 			ans *= 10
-			ans += intfor(stroka[i])
+			ans += intfor2(stroka[i])
 		}
 	}
 	return ans
