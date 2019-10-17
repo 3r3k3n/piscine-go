@@ -17,7 +17,7 @@ func BasicAtoi(s string) int {
 	ans := 0
 	for i := 0; i < n; i++ {
 		if stroka[i] < '0' || stroka[i] > '9' {
-			return 0
+			return null
 		} else {
 			ans *= 10
 			ans += intfor(stroka[i])
