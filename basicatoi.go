@@ -1,19 +1,28 @@
 package piscine
 
+func intfor(r rune) int {
+	temp2 := -1
+	for temp := '0'; temp <= r; temp++ {
+		temp2++
+	}
+	return temp2
+}
+
 func BasicAtoi(s string) int {
-	var a = int 
-
-	for index := range s {
-		a = index
+	stroka := []rune(s)
+	n := 0 
+	for range stroka {
+		n++
 	}
-
-	bytes := []byte s
-
-	for i := 0; i >= a; i++ {
-
-		if bytes[i] != '48' {
-			fmt.Printf(bytes[i])
-		} 
-
+	ans := 0
+	for i := 0; i < n; i++ {
+		if stroka[i] < '0' || stroka[i] > '9' {
+			return ans
+		} else {
+			ans *=10
+			ans += intfor(stroka[i])
+		}
 	}
+	return ans
+
 }
