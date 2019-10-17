@@ -1,7 +1,5 @@
 package piscine
 
-
-
 func StrRev(s string) string {
 	var a int
 	
@@ -11,10 +9,10 @@ func StrRev(s string) string {
 	
 	wordInBytes := []byte(s)
 	j := 0
-	for i:=a; i >= 0; i--{
+	for i := a; i >= 0; i-- {
 		wordInBytes[i] = byte(s[j])
 		j++
 	}
-	FinalStr := string(wordInBytes)  
-	return FinalStr
+	FinalStr := string(wordInBytes)
+		return FinalStr
 }
