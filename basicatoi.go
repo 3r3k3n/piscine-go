@@ -10,7 +10,7 @@ func intfor(r rune) int {
 
 func BasicAtoi(s string) int {
 	stroka := []rune(s)
-	n := 0 
+	n := 0
 	for range stroka {
 		n++
 	}
@@ -19,10 +19,9 @@ func BasicAtoi(s string) int {
 		if stroka[i] < '0' || stroka[i] > '9' {
 			return ans
 		} else {
-			ans *=10
+			ans *= 10
 			ans += intfor(stroka[i])
 		}
 	}
 	return ans
-
 }
