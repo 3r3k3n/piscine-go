@@ -14,5 +14,5 @@ func StrRev(s string) string {
 		j++
 	}
 	FinalStr := string(wordInBytes)
-		return FinalStr
+	return FinalStr
 }
