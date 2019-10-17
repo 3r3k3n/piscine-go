@@ -8,7 +8,7 @@ func intfor(r rune) int {
 	return temp2
 }
 
-func BasicAtoi(s string) int {
+func BasicAtoi2(s string) int {
 	stroka := []rune(s)
 	n := 0
 	for range stroka {
