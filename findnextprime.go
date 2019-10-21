@@ -2,7 +2,7 @@ package main
 
 func FindNextPrime(nb int) int {
 
-	if nb >=1 {
+	if nb >= 1 {
 		if nb%2 == 0 && nb != 2 {
 			return FindNextPrime(nb + 1)
 		}
