@@ -11,7 +11,7 @@ func RecursivePower(nb int, power int) int {
 		}
 		if nb > 1 || nb < -1 {
 			return RecursivePower(result, power-1) * result
-		} 
+		}
 
 	}
 	return result
