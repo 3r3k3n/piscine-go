@@ -1,47 +1,28 @@
-package student
+package piscine 
 
-func trust(a rune) bool {
-	if (a >= 'A' && a <= 'Z') || (a >= 'a' && a <= 'z') || (a >= '0' && a <= '9') {
+func Capitalize(s string) string {
+	sAsRune := []rune(s)
+	for index, letter := range sAsRune {
+				if checkAlphNum(letter) {
+			if index == 0 || checkAlphNum(sAsRune[index-1]) == false {
+				if letter >= 'a' && letter <= 'z' {
+					sAsRune[index] = letter - 32
+				}
+			} else {
+				if letter >= 'A' && letter <= 'Z' {
+					sAsRune[index] = letter + 32
+				}
+			}
+		}
+	}
+	return string(sAsRune)
+}
+
+func checkAlphNum(r rune) bool {
+	if r >= 'A' && r <= 'Z' ||
+		r >= 'a' && r <= 'z' ||
+		r >= '0' && r <= '9' {
 		return true
 	}
 	return false
-}
-
-func ToUpper(s rune) rune {
-	if s-32 < 65 {
-		return s
-	}
-	return rune(s - 32)
-}
-
-func ToLower(s rune) rune {
-	if s+32 > 122 {
-		return s
-	}
-	return rune(s + 32)
-}
-
-func Capitalize(s string) string {
-	srunes := []rune(s)
-	len := 0
-	ok := true
-	for i := range s {
-		len = i
-	}
-
-	for i := 0; i < len; i++ {
-		if trust(srunes[i]) == true && ok {
-			if srunes[i] >= 'a' && srunes[i] <= 'z' {
-				srunes[i] = ToUpper(srunes[i])
-			} else if srunes[i] >= '0' && srunes[i] <= '9' {
-				srunes[i+1] = ToLower(srunes[i+1])
-			}
-			ok = false
-		} else if srunes[i] >= 'A' && srunes[i] <= 'Z' {
-			srunes[i] = ToLower(srunes[i])
-		} else if trust(srunes[i]) == false {
-			ok = true
-		}
-	}
-	return string(srunes)
 }
