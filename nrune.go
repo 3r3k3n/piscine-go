@@ -1,6 +1,6 @@
 package piscine
 
-func NRune(s string, n int) rune {	
+func NRune(s string, n int) rune {
 	counterRune := []rune(s)
 	counter := 0
 	mainRune := 0
