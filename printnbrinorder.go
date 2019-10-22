@@ -31,7 +31,7 @@ func sort(arr []int) []int {
 }
 
 func PrintNbrInOrder(nb int) {
-	if n == 0 {
+	if nb == 0 {
 		z01.PrintRune('0')
 		return
 	}
