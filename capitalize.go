@@ -3,7 +3,7 @@ package piscine
 func Capitalize(s string) string {
 	sAsRune := []rune(s)
 	for index, letter := range sAsRune {
-				if checkAlphNum(letter) {
+		if checkAlphNum(letter) {
 			if index == 0 || checkAlphNum(sAsRune[index-1]) == false {
 				if letter >= 'a' && letter <= 'z' {
 					sAsRune[index] = letter - 32
