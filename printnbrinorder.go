@@ -30,7 +30,7 @@ func sort(arr []int) []int {
 	return arr
 }
 
-func PrintNbrInOrder(n int) {
+func PrintNbrInOrder(nb int) {
 	if n == 0 {
 		z01.PrintRune('0')
 		return
