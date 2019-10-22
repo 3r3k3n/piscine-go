@@ -1,4 +1,4 @@
-package piscine 
+package piscine
 
 func ToUpper(s string) string {
 	wordByte := []byte(s)
