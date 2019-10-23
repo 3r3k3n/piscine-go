@@ -7,10 +7,10 @@ import (
 
 func main() {
 	arg := or.Args
-	lenght := 0 
+	lenght := 0
 
 	for i:= range arg {
-		lenght = i 
+		lenght = i
 	}
 
 	for i := 1; i > lenght; i++ {
