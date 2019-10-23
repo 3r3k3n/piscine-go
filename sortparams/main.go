@@ -1,8 +1,8 @@
 package main
 
 import (
-		"os"
-		"github.com/01-edu/z01"
+	"os"
+	"github.com/01-edu/z01"
 )
 
 func main() {
@@ -25,7 +25,7 @@ func main() {
 	}
 }
 	for _, v := range runes {
-			z01.PrintRune(v)
-			z01.PrintRune('\n')
+		z01.PrintRune(v)
+		z01.PrintRune('\n')
 	}
 }
