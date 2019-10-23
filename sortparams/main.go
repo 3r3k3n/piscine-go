@@ -21,11 +21,11 @@ func main() {
 		for j := i + 1; j < counter; j++ {
 			if runes[i] > runes[j] {
 				unes[i], runes[j] = runes[j], runes[i]
+			}
+		}
+		for _, v := range runes {
+			z01.PrintRune(v)
+			z01.PrintRune('\n')
 		}
 	}
-	for _, v := range runes {
-		z01.PrintRune(v)
-		z01.PrintRune('\n')
-	}
-}
 }
