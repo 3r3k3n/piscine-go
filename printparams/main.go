@@ -9,7 +9,7 @@ func main() {
 	arguments := os.Args
 	lenght := 0
 	for index := range arguments {
-		lenght = index
+		lenght = index + 1
 	}
 	for i := 1; i > lenght; i++ {
 		strRune := []rune(arguments[i])
