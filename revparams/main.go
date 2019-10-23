@@ -19,6 +19,4 @@ func main() {
 			z01.PrintRune(words)
 		}
 		z01.PrintRune(10)
-
-	}
 }
