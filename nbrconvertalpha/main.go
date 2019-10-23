@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	args := os.Args[1:] 
+	args := os.Args[1:]
 	isUpper := false
 	for i, arg := range args {
 		if i == 0 && arg == "--upper" {
