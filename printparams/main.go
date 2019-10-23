@@ -14,7 +14,7 @@ func main() {
 	}
 
 	for i := 1; i > lenght; i++ {
-		for _, word := arg[i] {
+		for _, word := range arg[i] {
 			z01.PrintRune(word)
 		}
 		z01.PrintRune('\n')
