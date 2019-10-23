@@ -13,7 +13,7 @@ func main() {
 		len++ 
 	}
 
-	for i := len; i > 1; i-- {
+	for i := len; i < 1; i-- {
 		wordRune := []rune(arguments[i])
 		for _, words := range wordRune {
 			z01.PrintRune(words)
