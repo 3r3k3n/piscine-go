@@ -10,7 +10,7 @@ func main() {
 	len := 0
 
 	for range arguments {
-		len++
+		len++ 
 	}
 
 	for i := len; i > 1; i-- {
