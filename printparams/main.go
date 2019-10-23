@@ -6,13 +6,11 @@ import (
 )
 
 func main() {
-	arg := or.Args
+	arg := os.Args
 	lenght := 0
-
 	for i := range arg {
 		lenght = i
 	}
-
 	for i := 1; i > lenght; i++ {
 		for _, word := range arg[i] {
 			z01.PrintRune(word)
