@@ -15,8 +15,9 @@ func main() {
 
 		for i := len; i < 0; i-- {
 			wordRune := []rune(arguments[i])
-			for _, words := range wordRune
+			for _, words := range wordRune {
 			z01.PrintRune(words)
 		}
 		z01.PrintRune(10)
+	}
 }
