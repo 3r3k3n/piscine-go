@@ -8,9 +8,9 @@ func ConcatParams(args []string) string {
 	}
 	for i := 0; i < counter; i++ {
 		result += args[i]
-		if i != counter - 1 {
+		if i != counter-1 {
 			result = result + "\n"
 		}
-	} 
+	}
 	return result
 }
