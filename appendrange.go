@@ -10,5 +10,7 @@ func AppendRange(min, max int) []int {
 		return answer
 	} else if min == 0 {
 		return nil
-	} 
+	} else {
+		return nil
+	}
 }
